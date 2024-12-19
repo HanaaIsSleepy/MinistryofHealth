@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    
+</head>
+<body class="formpage">
+    <p class="register">Enter your information to register with the Ministry of Health</p> <br>
+    <p class="register">Already have an account?  &nbsp;&nbsp; <a href="login.html">Login</a></p> <br>
+
+    <form class="register" action="thankyou.html" method="post">
+
+        <label>First Name:<br><input type="text" name="fname" placeholder="John" required></label>
+        <br> <br>
+        <label>Last Name:<br><input type="text" name="lname" placeholder="Doe" required></label>
+
+        <br><br>
+
+        <label>Username:<br><input type="text" name="username" placeholder="johndoe123" required></label>
+
+        <br><br>
+
+        <label>Password:<br><input type="password" name="password" required></label>
+
+        <br><br>
+
+        <label>Date of Birth:<br><input type="date" name="dob" required></label>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <label><input type="radio" name="gender" value="male" required>Male</label>
+            <label><input type="radio" name="gender" value="female" required>Female</label>
+            <label><input type="radio" name="gender" value="other" required>Other</label>
+        </fieldset>
+
+        <br>
+
+        <label>Phone Number:<br><input type="tel" name="phone" placeholder="123-4567"></label>
+
+        <br><br>
+
+        <label>Email:<br><input type="email" name="email" placeholder="example@domain.com" required></label>
+
+        <fieldset>
+            <legend>Would you like to receive emails from us?</legend>
+            <label><input type="radio" name="boolean" value="yes" checked>Yes</label>
+            <label><input type="radio" name="boolean" value="no">No</label>
+        </fieldset>
+
+        <br>
+
+        <label>What do you wish to register as?
+            <select name="reason">
+                <option value="choose">Choose..</option>
+                <option value="Patient">Patient</option>
+                <option value="Staff">Staff</option>
+            </select>
+        </label> <br><br>
+
+        <input type="reset" value="Clear"> &nbsp;&nbsp;
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>
